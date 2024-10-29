@@ -4,20 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./index.js"></script>
 </head>
 <body>
-    <h1>
-        Hola mundo
+    <button class="abrir-btn" onclick="toggleSidebar()">&#9776; Abrir/Cerrar</button>
 
-        nice
-    </h1>
+    <!-- Barra lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="contenido" class="contenido">
+        <h2>Contenido principal</h2>
+        <p>Este es el contenido principal de la página. Cuando la barra lateral está abierta, este contenido se ajusta automáticamente.</p>
+    </div>
+
+    <!-- JavaScript para controlar la barra lateral -->
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var contenido = document.getElementById("contenido");
+            
+            // Alterna la clase 'retraido' en la barra lateral
+            sidebar.classList.toggle("retraido");
+            contenido.classList.toggle("retraido");
+        }
+    </script>
+
 
     <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos excepturi quis autem amet consequatur totam atque neque, illo magni rem mollitia numquam expedita quo eos nisi voluptas fuga cum dolorem.</p>
+        <div class="header">
+            <h1>Web prueba</h1>
+        </div>
     </div>
-    <p>parrafo 2</p>
-    <p>Felipe IV</p>
-    <p>Felipe V</p>
-    <p>Felipe VI</p>
+    <hr>
+    
+    <div class="containerP">
+        <div class="parrafo">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo officia provident officiis sit saepe itaque distinctio rem veritatis, ipsum numquam cumque excepturi accusamus beatae enim, aperiam veniam maiores praesentium.</p>
+        </div>  
+        <div class="parrafo">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates nemo officia provident officiis sit saepe itaque distinctio rem veritatis, ipsum numquam cumque excepturi accusamus beatae enim, aperiam veniam maiores praesentium.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="parrafo">
+            <h1>Hola f</h1>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="/terminos">Términos de servicio</a></li>
+            <li><a href="/privacidad">Política de privacidad</a></li>
+            <li><a href="/contacto">Contáctanos</a></li>
+        </ul>
+        <div class="redes-sociales">
+            <a href="https://facebook.com/tuempresa">Facebook</a>
+            <a href="https://twitter.com/tuempresa">Twitter</a>
+            <a href="https://instagram.com/tuempresa">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>

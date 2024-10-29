@@ -1,3 +1,139 @@
-body{
-    color: gray;
+
+.container{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.header{
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.containerP{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.parrafo{
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+    width: 35%;
+    padding: 20px;
+}
+
+body, html {
+    height: 100%; /* Asegura que el cuerpo y el HTML ocupen toda la pantalla */
+    margin: 0;
+}
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* Hace que el contenedor ocupe toda la altura de la ventana */
+}
+.caja {
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 200px;  /* Centra el texto verticalmente dentro de la caja */
+    border: 2px solid #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+footer .redes-sociales {
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    footer ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+
+.sidebar {
+    height: 100%; /* Barra ocupa toda la altura de la ventana */
+    width: 250px; /* Ancho inicial */
+    position: fixed; /* Fija en el lado izquierdo */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Color de fondo oscuro */
+    padding-top: 60px;
+    transition: 0.3s; /* Transición suave */
+    overflow-x: hidden; /* Oculta contenido que desborde horizontalmente */
+}
+/* Estilos cuando la barra está cerrada */
+.sidebar.retraido {
+    width: 0;
+}
+/* Estilos de los enlaces dentro de la barra */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+/* Cambia el color de los enlaces cuando se pasa el mouse */
+.sidebar a:hover {
+    background-color: #575757;
+}
+/* Botón para abrir/cerrar la barra lateral */
+.abrir-btn {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.3s;
+}
+/* Estilo del contenido principal */
+.contenido {
+    margin-left: 250px; /* Espacio para la barra lateral cuando está abierta */
+    padding: 16px;
+    transition: 0.3s;
+}
+/* Ajuste del contenido cuando la barra está retraída */
+.contenido.retraido {
+    margin-left: 0;
 }
